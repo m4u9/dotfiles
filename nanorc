@@ -1,0 +1,17 @@
+include /usr/share/nano/*.nanorc
+set suspendable
+set autoindent
+set casesensitive
+set emptyline
+set linenumbers
+set positionlog
+set tabstospaces
+set tabsize 4
+set autoindent
+set whitespace "»·"
+set statuscolor black,blue
+set titlecolor black,blue
+set numbercolor blue
+set selectedcolor blue
+set keycolor blue
+## set functioncolor blue
