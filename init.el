@@ -36,7 +36,10 @@
 (use-package doom-modeline
   :ensure t
   :init (doom-modeline-mode 1)
-  :custom (doom-modeline-height 15))
+  :custom (doom-modeline-height 15)
+  :config (setq doom-modeline-icon t))
+
+(use-package all-the-icons)
 
 (use-package elpy)
 (elpy-enable) ; Enable elpy for Python stuff
@@ -91,17 +94,3 @@
 		eshell-mode-hook))
   (add-hook mode (lambda () (display-line-numbers-mode 0))))
 
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(delete-selection-mode nil)
- '(package-selected-packages
-   '(magit rpm-spec-mode general doom-themes helpful which-key rainbow-delimiters elpy doom-modeline ivy-rich counsel swiper command-log-mode use-package)))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
