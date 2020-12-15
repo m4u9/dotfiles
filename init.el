@@ -77,6 +77,8 @@
 (use-package magit)
 
 ;; Clean up the UI
+(add-to-list 'default-frame-alist
+             '(font . "Ubuntu Mono 13"))
 (setq inhibit-startup-message t) ; Disable startup  message
 (tool-bar-mode -1) ; Disable toolbar
 (global-hl-line-mode +1) ; Hightlight current line
@@ -84,7 +86,7 @@
 (set-fringe-mode 10) ; Give some breathing room
 (menu-bar-mode +1) ; Display menubar
 (setq frame-resize-pixelwise t) ; Make windows size by pixel
-
+(add-to-list 'default-frame-alist '(fullscreen . maximized))
 ;; Make ESC quit prompts
 (global-set-key (kbd "<escape>") 'keyboard-escape-quit)
 
@@ -93,4 +95,3 @@
 		term-mode-hook
 		eshell-mode-hook))
   (add-hook mode (lambda () (display-line-numbers-mode 0))))
-
